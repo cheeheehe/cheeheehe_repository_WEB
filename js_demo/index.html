@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/Javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>the tortured poets department</h1>
+        <p>a taylor swift album</p>
+    </div>
+    <div>
+        <h2>want to learn what it looks like?</h2>
+        <p><a href="http://taylorswift.com" target="_blank" onclick="alert('see you soon!')">take a look here...</a>🤍</p>
+        
+        <h2>she had us thinking that...</h2>
+        <p>2+2=</p>
+        <button onclick="document.getElementById('add').innerHTML = 2+3">4?</button>
+        <p id="add"></p>
+        <p>and he was the love of her life</p>
+        <p>ttpd is a breakup album</p>
+
+        <h2>ttpd released on april 18</h2>
+        <button onclick="document.getElementById ('date'). innerHTML=Date()">how long has it been?</button>
+        <p id="date"></p>
+        <p>lots of time, apparently</p>
+
+        <h2>what are the editions of ttpd?</h2>
+        <button onclick="document.getElementById('change-text').innerHTML='the black dog, the bolter, the albatross, the manuscript'">there are 4 in total...</button>
+        <p id="change-text">lalala</p>
+
+        <h2>which edition of ttpd sounds the most exciting?</h2>
+        <button onclick="askName()">choose</button>
+        <p id="ask-name"></p>
+
+        <h2>but there's something else...</h2>
+        <p>want to know what it is?</p>
+        <button onclick="pFun()">an 11pm special surprise ✌</button>
+        <p id="p-fun"></p>
+
+        <h2>have you listened yet?</h2>
+        <button onclick="askQuestion()">yes?</button>
+        <p id="question"></p>
+
+        <h2>here's one of taylor's photos</h2>
+        <button onclick="showImage()">on the anthology cover</button>
+        <br>
+        <img id="surprise" src="">
+    </div>
+
+    <script>
+        function askName() {
+            var nameReturn = document.getElementById('ask-name')
+            var name = prompt('which one will you choose?' , 'here!');
+            if (name == '') {
+                alert('choose one.');
+            } else {
+                nameReturn.innerHTML = name + ' is a great choice!';
+            }
+        }
+
+
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML = '🤍another set of 15 songs! this new edition is called the Anthology 🖤';
+            p.style.fontSize = '30px';
+            p.style.color = 'grey';
+            p.style.textAlign = 'center';
+        }
+        // delete the 2 backslashes infront to turn on alert
+        //alert('all\s fair \nin love \nand poetry')
+    </script>
+</body>
+</html>

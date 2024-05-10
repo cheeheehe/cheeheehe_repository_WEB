@@ -1,0 +1,48 @@
+#multi-text {
+    color:rgb(255, 195, 127);
+    text-align:middle;
+    font-size:20px;
+    font-family:fantasy;
+}
+ 
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 5px solid pink;
+    background-color: pink;
+}
+.nav{
+    list-style:none;
+    text-align:center;
+    font-size: 25px;
+}
+ 
+.nav li {
+    display:inline;
+    margin-right:20px;
+}
+
+.nav a {
+    color:hotpink
+}
+ 
+.center-text {
+    text-align:center;
+}
+
+.my-first-div {
+    font-size: 40px;
+    color:cornflowerblue;
+    background-color: rgb(135, 222, 145);
+}
+
+#span-1 {
+    color:coral;
+    font-size:300px;
+}
+
+#span-2 {
+    color:goldenrod;
+    font-size:80px;
+}
+
